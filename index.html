@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/dbe8be4d81.js"></script>
+  <script type="text/javascript">
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pontano+Sans" />
+  <title>Andrew Thomas, web developer</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class = "sr-only">Toggle navigation</span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">Andrew Thomas</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav nav-pills navbar-right">
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <div class="jumbotron about-me" id="aboutme">
+    <div class="container">
+        <h1 class="text-center nav-offset">Welcome!</h1>
+        <img src="http://astreetproductions.com/projects/portfolio/images/me.jpg" class="img img-responsive img-circle pull-left" alt="me" />
+        <p>My name is Andrew Thomas. I'm a musician, help desk technician, and aspiring web developer. I'm currently taking courses toward a degree in Computer Information Systems, as well as a certificate in front-end development at Free Code Camp.
+        </p>
+        <p>I've been learning to build responsive websites with HTML, CSS, Bootstrap, and Wordpress. This page will be updated with new projects as I progress.</p></div>
+
+
+ </div> <!-- end about me -->
+  <div class="container examples" id="portfolio">
+        <h2 class="text-center nav-offset">Portfolio</h2>
+        <p class="text-center">Click on a thumbnail to see an example of my work.</p>
+        <div class="row">
+          <div class="col-sm-3 col-sm-offset-3 workgrid">
+            <p class="text-center exampletext">Roddy Frame Tribute</p>
+            <a href="http://astreetproductions.com/projects/tribute" target="_blank"><img class="img-responsive example center-block" src="http://astreetproductions.com/projects/portfolio/images/roddy.jpg" alt="Roddy Frame tribute" /></a>
+          </div>
+           <div class="col-sm-3 workgrid">
+            <p class="text-center exampletext">Coming soon...</p>
+          <a href="">
+            <img class="img-responsive example center-block" src="http://astreetproductions.com/projects/portfolio/images/354.jpg" alt="Placeholder" /></a>
+          </div>
+          </div>
+
+
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-3 workgrid" id="example3">
+            <p class="text-center exampletext">Coming soon...</p>
+          <a href="">
+            <img class="img-responsive example center-block" src="http://astreetproductions.com/projects/portfolio/images/354.jpg" alt="Placeholder" /></a>
+          </div>
+            <div class="col-sm-3 workgrid">
+            <p class="text-center exampletext">Coming soon...</p>
+            <a href=""><img class="img-responsive example center-block" src="http://astreetproductions.com/projects/portfolio/images/354.jpg" alt="Placeholder" /></a>
+          </div>
+        </div>
+      </div> <!-- end portfolio -->
+  <div class="container contact text-center" id="contactme">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center">Get in touch with me at these sites:</p>
+        <ul class="list-unstyled list-inline">
+          <li><a href="https://www.linkedin.com/in/andrew-thomas-9668322"  target="_blank" class="btn btn-lg social"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+          <li><a href="http://twitter.com/anthom"  target="_blank" class="btn btn-lg social"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+          <li><a href="https://github.com/anthom"  target="_blank" class="btn btn-lg social"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
+          <li><a href="https://www.freecodecamp.com/anthom"  target="_blank" class="btn btn-lg social"><img src="http://astreetproductions.com/projects/portfolio/images/fcc.png" height="30px">FreeCodeCamp</a></li>
+        </ul>
+    <h4 class="text-center">Email:</h4>
+    <a href="&#109;&#97;&#105;lt&#111;&#58;a%6Ethom&#64;g&#109;&#97;%69l%2Eco&#109;">anthom&#64;&#103;m&#97;il&#46;c&#111;m</a>
+      </div>
+    <footer class="text-right">
+      <p>&copy;2016 by Andrew Thomas</p>
+    </footer>
+</body>
+</html>
